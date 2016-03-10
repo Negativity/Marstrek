@@ -50,15 +50,16 @@
                           <block type="oled_drawtext" id="85">
                             <field name="TEXT">Q-Carbon detected.</field>
                             <next>
-                              <block type="led_select" id="200" inline="true">
-                                <field name="ACTION">OFF</field>
-                                <value name="LED">
-                                  <block type="math_number" id="201">
-                                    <field name="NUM">2</field>
-                                  </block>
-                                </value>
+                              <block type="movement_stop" id="19">
                                 <next>
-                                  <block type="movement_stop" id="19"></block>
+                                  <block type="led_select" id="200" inline="true">
+                                    <field name="ACTION">OFF</field>
+                                    <value name="LED">
+                                      <block type="math_number" id="201">
+                                        <field name="NUM">2</field>
+                                      </block>
+                                    </value>
+                                  </block>
                                 </next>
                               </block>
                             </next>
