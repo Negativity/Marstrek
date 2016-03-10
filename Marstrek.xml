@@ -18,24 +18,12 @@
                   </block>
                 </value>
                 <statement name="DO">
-                  <block type="controls_if" id="278" inline="false">
-                    <value name="IF0">
-                      <block type="sensor_button" id="237">
-                        <field name="OBJECT">ENTER</field>
+                  <block type="robot_delay" id="9" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="26">
+                        <field name="NUM">1000</field>
                       </block>
                     </value>
-                    <statement name="DO0">
-                      <block type="movement_stop" id="279"></block>
-                    </statement>
-                    <next>
-                      <block type="robot_delay" id="9" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="26">
-                            <field name="NUM">1000</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
                   </block>
                 </statement>
                 <next>
