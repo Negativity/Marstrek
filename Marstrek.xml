@@ -17,7 +17,30 @@
           </block>
         </statement>
         <next>
-          <block type="movement_stop" id="19"></block>
+          <block type="oled_cleardisplay" id="76">
+            <next>
+              <block type="oled_setcursor" id="65" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="67">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="66">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_drawtext" id="85">
+                    <field name="TEXT">Q-Carbon detected.</field>
+                    <next>
+                      <block type="movement_stop" id="19"></block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
