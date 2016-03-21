@@ -66,7 +66,12 @@
                                   <block type="oled_drawtext" id="18">
                                     <field name="TEXT">Q-Carbon detected.</field>
                                     <next>
-                                      <block type="movement_stop" id="19"></block>
+                                      <block type="multimedia_playwav" id="42">
+                                        <field name="WAV">horse</field>
+                                        <next>
+                                          <block type="movement_stop" id="19"></block>
+                                        </next>
+                                      </block>
                                     </next>
                                   </block>
                                 </next>
